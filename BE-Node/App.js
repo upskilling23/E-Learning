@@ -7,10 +7,7 @@ app.use(express.json());
 
 app.use("/user", userRoutes);
 
-app.listen(process.env.PORT, () =>
-  console.log(`server running on port ${process.env.PORT}`)
-);
 connectDb();
-app.listen(process.env.PORT, async () => {
+app.listen(process.env.PORT, () => {
   console.log(`server running on port ${process.env.PORT}`);
 });
